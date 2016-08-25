@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MediaPlayer mediaPlayer  = new MediaPlayer();
     private Button btnPlay,btnStop,btnPause,btnRestart;
     private int playbackPosition=0;
-    ProgressBar pb;
+
     private ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pb = (ProgressBar)findViewById(R.id.progressBar);
+      
         btnPlay = (Button)findViewById(R.id.btnPlay);
         btnStop = (Button)findViewById(R.id.btnStop);
         btnPause = (Button)findViewById(R.id.btnPause);
